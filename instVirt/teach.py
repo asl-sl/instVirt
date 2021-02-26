@@ -47,16 +47,19 @@ class vteach(Tk):
         pass
     
     def bvindo(self):
-        self.filename="/home/asl-teach/ASL-SL/boas-vindas.txt"
-        os.system("clear")
-        talkStr = "cat " + self.filename + " | tbastet "
-        texto = ""
-        f = open(self.filename, "r")
-        texto += f.read()
-        print(texto)
-        os.system(talkStr)
+        d = StringVar()
+        e = StringVar()
+        fname = StringVar()
+        disc = self.ld.get(ACTIVE)
+        d.set(disc)
+        etapa = self.le.get(ACTIVE)
+        e.set(etapa)
+        fname = d.get() + "/" + e.get()
+        strCmd = "nohup espeak -a 120 -b 1 -s 128 -v brazil-mbrola-1 -f " + fname + " 2>/dev/null"
+        print (strCmd)
+        os.system(strCmd)
         pass
-
+    
     def mtext(self):
         d = StringVar()
         e = StringVar()
