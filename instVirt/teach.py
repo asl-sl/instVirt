@@ -15,7 +15,7 @@ class vteach(Tk):
         self.sbtn = Button(self, text=" Ler", command=self.mtext)
         self.bbtn = Button(self, text=" Narrar", command=self.bvindo)
         self.le = Listbox(self, background="white", height=10, listvariable=self.e)
-        self.ld = Listbox(self, background="white", height=4, listvariable=self.d)
+        self.ld = Listbox(self, background="white", height=4, width=22, listvariable=self.d)
         etapas = [ "primeira","segunda","terceira","quarta","quinta","sexta","sétima","oitava","nona","décima" ]
         idx = 0
         for etap in etapas:
