@@ -21,4 +21,4 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.  
     This program comes with ABSOLUTELY NO WARRANTY
     This is free software, and you are welcome to redistribute it '''
-__version__="1.1a0"
+__version__="1.1a1"
